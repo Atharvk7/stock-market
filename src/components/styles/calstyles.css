@@ -1,0 +1,10 @@
+.emi-calculator {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.emi-calculator.animate-left-to-right {
+    opacity: 1;
+    transform: translateX(0);
+}
