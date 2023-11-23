@@ -19,6 +19,7 @@ import IncomeTaxCalculator from './components/incometax';
 import RetirementPlanningCalculator from './components/retirementplancalci';
 import LumpSump from './components/calculator';
 import SIPCalculator from './components/sipcalculator';
+import FDCalculator from './components/fdcalculator';
 
 export default function App() {
   const { location, isLoading } = useAuth0(); // Added isLoading to check the loading state
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/income" element={<IncomeTaxCalculator />} />
           <Route path="/ppf" element={<PPFCalculator />} />
           <Route path="/sip" element={<SIPCalculator />} />
+          <Route path="/fd" element ={<FDCalculator/>}/>
           <Route path="/lump" element={<LumpSump />} />
         </Routes>
       </BrowserRouter>

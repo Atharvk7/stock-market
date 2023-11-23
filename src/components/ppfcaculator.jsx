@@ -28,7 +28,7 @@ function PPFCalculator() {
 
   return (
        <div style={{ background: "linear-gradient(to right, #260000, #c31432)", width: '100vw',height:"110vh"}}>
-      <div style={{ fontSize: "48px", paddingTop: "2%", color: "white" }}><strong>PPF Calculator</strong></div><br />
+      <div style={{ fontSize: "48px", paddingTop: "2%", color: "white",textAlign:"center" }}><strong>PPF Calculator</strong></div><br />
       <Fade right>
       <div style={{ border: 'green 2px solid', display: 'flex', flexDirection: 'row',opacity:0.7, justifyContent: 'space-around', backgroundColor: 'white',margin:"2%",borderRadius:"25px" }}>
         <div style={{ border: '', width: '1500px', padding: '4%' }}>

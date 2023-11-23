@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Slider } from '@mui/material';
 import { Chart } from 'react-google-charts';
 import { Fade } from 'react-reveal';
-function CompoundInterestCalculator() {
+function FDCalculator() {
   const options = {
     title: 'Doghnut Chart',
     pieHole: 0.4,
@@ -76,4 +76,4 @@ function CompoundInterestCalculator() {
   );
 }
 
-export default CompoundInterestCalculator;
+export default FDCalculator;

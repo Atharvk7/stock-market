@@ -50,7 +50,6 @@ data.splice(17)
     return (
      <div style={{ background: "linear-gradient(to right, #260000, #c31432)", height: "120vh", width: "100vw" }}>
       {/* <NavBar /> */}
-      <Fade bottom>
         <div style={{ color: "white", borderRadius: "20px", display: "flex", justifyContent: "center", borderCollapse: "separate" }}>
           <table
             border="1"
@@ -83,7 +82,6 @@ data.splice(17)
             </tbody>
           </table>
         </div>
-      </Fade>
     </div>
   );
 }
