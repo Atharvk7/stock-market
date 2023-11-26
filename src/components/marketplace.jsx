@@ -48,40 +48,41 @@ data.splice(17)
   }, []);
 
     return (
-     <div style={{ background: "linear-gradient(to right, #260000, #c31432)", height: "120vh", width: "100vw" }}>
-      {/* <NavBar /> */}
-        <div style={{ color: "white", borderRadius: "20px", display: "flex", justifyContent: "center", borderCollapse: "separate" }}>
-          <table
-            border="1"
-            style={{ height: "110vh", width: "70vw", borderRadius: "20px", marginTop: "3%", textAlign: "center" }}
-          >
-            <thead style={{ borderRadius: "20px" }}>
-              <tr style={{ height: "7vh", backgroundColor: "#4a0404", borderCollapse: "separate", borderRadius: "10px" }}>
-                <th>Company</th>
-                <th>Price</th>
-                <th>Change</th>
-                <th>Change Positive</th>
-              </tr>
-            </thead>
-            <tbody style={{ textAlign: "center" }}>
-              {data.map((item) => {
-                const companyName = Object.keys(item)[0];
-                const companyData = item[companyName];
+     <div style={{ background: "linear-gradient(to right, #260000, #c31432)", height: "120vh", width: "98vw" }}>
+        {data &&
+          <div style={{ color: "white", borderRadius: "20px", display: "flex", justifyContent: "center", borderCollapse: "separate" }}>
+            <table
+              border="1"
+              style={{ height: "110vh", width: "70vw", borderRadius: "20px", marginTop: "3%", textAlign: "center" }}
+            >
+              <thead style={{ borderRadius: "20px" }}>
+                <tr style={{ height: "7vh", backgroundColor: "#4a0404", borderCollapse: "separate", borderRadius: "10px" }}>
+                  <th>Company</th>
+                  <th>Price</th>
+                  <th>Change</th>
+                  <th>Change Positive</th>
+                </tr>
+              </thead>
+              <tbody style={{ textAlign: "center" }}>
+                {data.map((item) => {
+                  const companyName = Object.keys(item)[0];
+                  const companyData = item[companyName];
 
-                return (
-                  <tr style={{ backgroundColor: "white", color: "black", borderRadius: "20px", opacity: 0.9, height: "3vh" }}>
-                    <td><a href={`company/${companyName}`}>{companyName}</a></td>
-                    <td>{companyData.price}</td>
-                    <td>{companyData.change_point}</td>
-                    <td>
-                      {companyData.change_point > 0 ? <span style={{ color: "green" }}>Yes</span> : <span style={{ color: "red" }}>No</span>}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+                  return (
+                    <tr style={{ backgroundColor: "white", color: "black", borderRadius: "20px", opacity: 0.9, height: "3vh" }}>
+                      <td><a href={`company/${companyName}`}>{companyName}</a></td>
+                      <td>{companyData.price}</td>
+                      <td>{companyData.change_point}</td>
+                      <td>
+                        {companyData.change_point > 0 ? <span style={{ color: "green" }}>Yes</span> : <span style={{ color: "red" }}>No</span>}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        }
     </div>
   );
 }

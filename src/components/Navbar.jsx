@@ -17,7 +17,7 @@ const Dropdown = ({ label, items, links }) => {
 
   return (
     <div style={{ position: "relative" }}>
-      <div style={{ cursor: "pointer", padding: "15px" ,color:"white"}} onClick={toggleDropdown}>
+      <div style={{ cursor: "pointer", paddingTop: "25px" ,color:"white",marginBottom:"25px"}} onClick={toggleDropdown}>
         {label} 
       </div>
       {isOpen && (
@@ -26,6 +26,7 @@ const Dropdown = ({ label, items, links }) => {
             position: "absolute",
             top: "100%",
             left: 0,
+            marginTop:"3vh",
             backgroundColor: "#fff",
             boxShadow: "0px 8px 16px 0px rgba(0,0,0,0.2)",
             zIndex: 100,
@@ -36,7 +37,7 @@ const Dropdown = ({ label, items, links }) => {
               key={index}
 
               href={`/${links[index].toLowerCase()}`} // Use the links array to determine the correct URL
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ textDecoration: "none", color: "black"}}
               onClick={() => handleItemClick(item)}
             >
               <div
@@ -84,6 +85,16 @@ export default function NavBar() {
               <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
                 <a href="/home" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
                   Home
+                </a>
+            </div>
+             <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
+                <a href="/newsfeed" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
+                  Newsfeed
+                </a>
+            </div>
+             <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
+                <a href="/com" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
+                  Timeseries
                 </a>
               </div>
               <div style={{ position: "relative", marginRight: "9%", color: "white", fontSize: "20px", margin: "5%", zIndex: 5 }} className="navbuttons">

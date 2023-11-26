@@ -20,6 +20,9 @@ import RetirementPlanningCalculator from './components/retirementplancalci';
 import LumpSump from './components/calculator';
 import SIPCalculator from './components/sipcalculator';
 import FDCalculator from './components/fdcalculator';
+import TimeSeries from './components/timeseries';
+import CompanyTable from './components/CompaniesList';
+import NewsFeed from './components/newsfeed';
 
 export default function App() {
   const { location, isLoading } = useAuth0(); // Added isLoading to check the loading state
@@ -35,7 +38,7 @@ export default function App() {
     <div className="App">
       {/* Conditionally render the NavBar component based on the current route */}
      <NavBar />
-
+{/* <TimeSeries/> */}
       {/* Your router configuration remains the same */}
       <BrowserRouter>
         <Routes>
@@ -52,6 +55,9 @@ export default function App() {
           <Route path="/sip" element={<SIPCalculator />} />
           <Route path="/fd" element ={<FDCalculator/>}/>
           <Route path="/lump" element={<LumpSump />} />
+          <Route path="/companies" element={<CompanyTable />} />
+          <Route path="/companies/:slug" element={<TimeSeries />} />
+          <Route path="/newsfeed" element={<NewsFeed/>}/>
         </Routes>
       </BrowserRouter>
       <span styles={{background:"linear-gradient(to right, #260000, #c31432)"}}>.</span>
