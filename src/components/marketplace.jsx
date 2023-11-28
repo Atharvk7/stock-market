@@ -23,8 +23,23 @@ let array = [
   "NDAQ",
   "CSCO",
   "EBAY",
-        "GME"
-    ];
+  "GME",
+  "PYPL",
+  "XXII",
+  "SMES",
+  "FORD",
+  "VOD",
+  "HPQ",
+  "LNVGY",
+  "LVM",
+  "DELL",
+  "BOAT",
+  "ABNB",
+  "SONY"
+
+        
+  ];
+
     const fetchData = async (element) => {
       const options = {
   method: 'GET',
@@ -42,7 +57,7 @@ let array = [
       console.error(error);
     }
   };
-data.splice(17)
+data.splice(30)
   useEffect(() => {
     array.forEach((element) => fetchData(element));
   }, []);

@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 export default function TimeSeries() {
     const [data, setData] = React.useState();
     const [slug,setSlug] = React.useState("")
-    const { slug: routeSlug } = useParams();
+  const { slug: routeSlug } = useParams();
+   const companies = {"Microsoft":"MSFT","Amazon":"AMZN","Tesla":"TSLA","Apple":"AAPL","IBM":"IBM","Pepsico":"PEPS","Meta":"META","Costco":"COST","Nvdia":"NVDA","AMD":"AMD","Arm Holdings":"ARM","Google":"GOOGL","Global X":"QYLD","Netflix":"NFLX","Compass Inc.":"COMP","NASDAQ":"NDAQ","Cisco":"CSCO","EBAY":"EBAY","Gamestop":"GME","Paypal":"PYPL"}
     useEffect(() => {
           const fetchData = async (slug) => {
       const apiKey = "Z2GIIMS7ITTVLKT2";

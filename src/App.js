@@ -23,6 +23,7 @@ import FDCalculator from './components/fdcalculator';
 import TimeSeries from './components/timeseries';
 import CompanyTable from './components/CompaniesList';
 import NewsFeed from './components/newsfeed';
+import WhyToInvest from './components/aboutus';
 
 export default function App() {
   const { location, isLoading } = useAuth0(); // Added isLoading to check the loading state
@@ -43,7 +44,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/home" element={<HomeBasePage />} />
+          <Route path="/topgainers" element={<HomeBasePage />} />
           <Route path="/retirement" element={<RetirementPlanningCalculator />} />
           <Route path="/company/:slug" element={<Company />} />
           <Route path="/marketplace" element={<Marketplace />} />
@@ -57,7 +58,8 @@ export default function App() {
           <Route path="/lump" element={<LumpSump />} />
           <Route path="/companies" element={<CompanyTable />} />
           <Route path="/companies/:slug" element={<TimeSeries />} />
-          <Route path="/newsfeed" element={<NewsFeed/>}/>
+          <Route path="/newsfeed" element={<NewsFeed />} />
+          <Route path="/invest" element={<WhyToInvest/>}/>
         </Routes>
       </BrowserRouter>
       <span styles={{background:"linear-gradient(to right, #260000, #c31432)"}}>.</span>

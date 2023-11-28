@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/calstyles.css"
 export default function CompanyTable() {
-    const companies = {"Microsoft":"MSFT","Amazon":"AMZN","Tesla":"TSLA","Apple":"AAPL","IBM":"IBM","Pepsico":"PEPS"}
+    const companies = {"Microsoft":"MSFT","Amazon":"AMZN","Tesla":"TSLA","Apple":"AAPL","IBM":"IBM","Pepsico":"PEPS","Meta":"META","Costco":"COST","Nvdia":"NVDA","AMD":"AMD","Arm Holdings":"ARM","Google":"GOOGL","Global X":"QYLD","Netflix":"NFLX","Compass Inc.":"COMP","NASDAQ":"NDAQ","Cisco":"CSCO","EBAY":"EBAY","Gamestop":"GME","Paypal":"PYPL"}
    const handleCompanyClick = (companyCode) => {
     // Update the URL with the company code
     window.history.pushState({}, "", `https://example.com/companies/${companyCode}`);

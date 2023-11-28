@@ -60,7 +60,7 @@ const Dropdown = ({ label, items, links }) => {
 export default function NavBar() {
   return (
     <div>
-      {window.location.pathname !== "/" && (
+  
         <div
           style={{
             display: "flex",
@@ -76,20 +76,24 @@ export default function NavBar() {
             opacity: 0.8,
           }}
         >
-          <strong style={{ color: "white", fontWeight: "bold", fontFamily: "monospace", fontSize: "25px" }}>
-            <span style={{ fontSize: "30px", marginLeft: "2vw" }}> ©</span> Choices and Capitals
-          </strong>
+        <strong style={{ color: "white", fontWeight: "bold", fontFamily: "monospace", fontSize: "25px" }}>
+          <a href="/" style={{color:"white",textDecoration:"none"}}>
+
+         
+            <span style={{ fontSize: "30px", marginLeft: "2vw",textDecoration:"none" }}> ©</span> Choices and Capitals
+         </a>  
+        </strong>
 
           <div style={{ display: "flex", flexDirection: "row", justifyContent: "end", cursor: "pointer", fontFamily: "monospace", zIndex: 5 }}>
             
-              <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
-                <a href="/home" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
-                  Home
+              <div style={{ position: "relative", marginRight: "7%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
+                <a href="/topgainers" style={{ marginRight: "7%", textDecoration: "none", color: "white" }}>
+                  TopGainers
                 </a>
             </div>
              <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
                 <a href="/newsfeed" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
-                  Newsfeed
+                  News
                 </a>
             </div>
              <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
@@ -112,7 +116,7 @@ export default function NavBar() {
             
           </div>
         </div>
-      )}
+    
     </div>
   );
 }

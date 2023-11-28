@@ -43,9 +43,7 @@ let array = [
 
     return (
         <div style={{background:"linear-gradient(to right, #260000, #c31432)",height:"120vh",width:"98vw",marginLeft:"11px"}}>
-                     <div style={{textAlign:"center",fontSize:"20px",color:'white',backgroundColor:"#260000",opacity:0.7,padding:"2%",borderBottomLeftRadius:"140px",borderBottomRightRadius:"140px"}}>We provide industry analysis, personalized suggestions, and investment insights.
- <br/>Our goal is to empower you with the knowledge and tools you need to build a secure financial future.
-            </div>  
+                    
             <Fade bottom>
 
             
