@@ -51,7 +51,7 @@ const Company = () => {
       setSlug(routeSlug);
       
   }, [routeSlug]);
- console.log(data)
+ 
   return (
       <div style={{background:"linear-gradient(to right, #260000, #c31432)",height:"180vh",display:"flex",justifyContent:"center"}}> {
       data ?
@@ -62,7 +62,7 @@ const Company = () => {
           <h1 style={{border:"white 4px solid",backgroundColor:"white",opacity:0.5,borderRadius:"8px",marginBottom:"2%"}}>Change Point: {data.change_point} </h1>
           <h1 style={{border:"white 4px solid",backgroundColor:"white",opacity:0.5,borderRadius:"8px",marginBottom:"2%"}}>Total Volume: {data.total_vol}</h1>
           <h1 style={{border:"white 4px solid",backgroundColor:"white",opacity:0.5,borderRadius:"8px"}}>Change Percentage: {data.change_percentage}</h1>
-          <div> {data.change_point > 0 ? <h2 style={{color:"green",marginTop:"7%"}}>We suggest you to invest in this stock</h2> : <h2 style={{marginTop:"7%",color:"red"}}>Keep safe distance from this stock</h2>}</div>
+          <div> {data.change_point > 0 ? <h2 style={{color:"#50c878",marginTop:"7%"}}>We suggest you to invest in this stock</h2> : <h2 style={{marginTop:"7%",color:"red"}}>Keep safe distance from this stock</h2>}</div>
           </div>
           </Fade>
               :""

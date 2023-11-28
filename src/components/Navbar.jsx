@@ -97,7 +97,7 @@ export default function NavBar() {
                 </a>
             </div>
              <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
-                <a href="/com" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
+                <a href="/companies" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
                   Timeseries
                 </a>
               </div>

@@ -20,16 +20,16 @@ export default function NewsFeed() {
   }, []);
 
   return (
-    <div style={{ padding: "2%", width: "100vw" }}>
+    <div style={{ padding: "2%", width: "95vw",height:"9000vh" }}>
       <h1 style={{ textAlign: "center",color:"white",marginBottom:"20px" }}>News Feed</h1>
       {data && data.length > 0 ? (
         data.map((article) => (
           
-          <div key={article.title} style={{  marginBottom: "5vh",display:"flex",flexDirection:"row",justifyContent:"space-around",backgroundColor:"white",color:"black",borderRadius:"10px" }}>
+          <div key={article.title} style={{  marginBottom: "5vh",display:"flex",flexDirection:"row",justifyContent:"space-between",backgroundColor:"white",color:"black",borderRadius:"10px" }}>
             
-              <img src={article.urlToImage} alt={article.title} width="200" height="200" />
+              <img src={article.urlToImage} alt={article.title} width="300" height="300" style={{borderTopLeftRadius:"10px",borderBottomLeftRadius:"10px"}} />
             
-            <div style={{ border: "white 3px solid" }}>
+            <div style={{ border: "white 3px solid",borderRadius:"10px",padding:"2%"  }}>
               <h3>{article.title}</h3>
               <a href={article.url}>Read More</a>
               <p>{article.description}</p>
