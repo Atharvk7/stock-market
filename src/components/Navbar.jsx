@@ -84,11 +84,11 @@ export default function NavBar() {
          </a>  
         </strong>
 
-          <div style={{ display: "flex", flexDirection: "row", justifyContent: "end", cursor: "pointer", fontFamily: "monospace", zIndex: 5 }}>
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "end", cursor: "pointer", fontFamily: "monospace", zIndex:5 ,flexWrap:'nowrap' }}>
             
-              <div style={{ position: "relative", marginRight: "7%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
-                <a href="/topgainers" style={{ marginRight: "7%", textDecoration: "none", color: "white" }}>
-                  TopGainers
+              <div style={{ position: "relative", marginRight:"5%",fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
+                <a href="/topgainers" style={{  textDecoration: "none", color: "white",whiteSpace:"nowrap" }}>
+                Top Gainers
                 </a>
             </div>
              <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
