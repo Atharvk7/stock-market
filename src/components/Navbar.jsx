@@ -33,10 +33,10 @@ const Dropdown = ({ label, items, links }) => {
           }}
         >
           {items.map((item, index) => (
-            <a
+            <Link
               key={index}
 
-              href={`/${links[index].toLowerCase()}`} // Use the links array to determine the correct URL
+              to={`/${links[index].toLowerCase()}`} // Use the links array to determine the correct URL
               style={{ textDecoration: "none", color: "black"}}
               onClick={() => handleItemClick(item)}
             >
@@ -49,7 +49,7 @@ const Dropdown = ({ label, items, links }) => {
               >
                 {item}
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       )}
@@ -87,24 +87,24 @@ export default function NavBar() {
           <div style={{ display: "flex", flexDirection: "row", justifyContent: "end", cursor: "pointer", fontFamily: "monospace", zIndex:5 ,flexWrap:'nowrap' }}>
             
               <div style={{ position: "relative", marginRight:"5%",fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
-                <a href="/topgainers" style={{  textDecoration: "none", color: "white",whiteSpace:"nowrap" }}>
+                <Link to="/topgainers" style={{  textDecoration: "none", color: "white",whiteSpace:"nowrap" }}>
                 Top Gainers
-                </a>
+                </Link>
             </div>
              <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
-                <a href="/newsfeed" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
+                <Link to="/newsfeed" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
                   News
-                </a>
+                </Link>
             </div>
              <div style={{ position: "relative", marginRight: "9%", fontSize: "22px", margin: "5%", zIndex: 5 }} className="navbuttons">
-                <a href="/companies" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
+                <Link to="/companies" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
                   Timeseries
-                </a>
+                </Link>
               </div>
               <div style={{ position: "relative", marginRight: "9%", color: "white", fontSize: "20px", margin: "5%", zIndex: 5 }} className="navbuttons">
-                <a href="/marketplace" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
+                <Link to="/marketplace" style={{ marginRight: "9%", textDecoration: "none", color: "white" }}>
                   Marketplace
-                </a>
+                </Link>
               </div>
               <div style={{ position: "relative", zIndex: 100, marginRight: "9%", fontSize: "20px" }} className="navbuttons">
                 <Dropdown

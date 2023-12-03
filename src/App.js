@@ -37,11 +37,12 @@ export default function App() {
 
   return (
     <div className="App">
+        <BrowserRouter>
       {/* Conditionally render the NavBar component based on the current route */}
      <NavBar />
 {/* <TimeSeries/> */}
       {/* Your router configuration remains the same */}
-      <BrowserRouter>
+    
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/topgainers" element={<HomeBasePage />} />
