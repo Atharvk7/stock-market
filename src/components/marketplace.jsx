@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import NavBar from './Navbar';
 import { Fade } from 'react-reveal';
-import Reveal from 'react-reveal/Reveal';
 export default function Marketplace() {
   const [data, setData] = useState([]);
 let array = [
@@ -36,8 +34,6 @@ let array = [
   "BOAT",
   "ABNB",
   "SONY"
-
-        
   ];
 
     const fetchData = async (element) => {

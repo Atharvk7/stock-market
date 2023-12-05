@@ -16,7 +16,7 @@ const Dropdown = ({ label, items, links }) => {
   };
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position:"relative" }}>
       <div style={{ cursor: "pointer", paddingTop: "25px" ,color:"white",marginBottom:"25px"}} onClick={toggleDropdown}>
         {label} 
       </div>
@@ -26,7 +26,8 @@ const Dropdown = ({ label, items, links }) => {
             position: "absolute",
             top: "100%",
             left: 0,
-            marginTop:"3vh",
+            marginTop: "3vh",
+            border:"1px black solid",
             backgroundColor: "#fff",
             boxShadow: "0px 8px 16px 0px rgba(0,0,0,0.2)",
             zIndex: 100,
@@ -43,8 +44,9 @@ const Dropdown = ({ label, items, links }) => {
               <div
                 style={{
                   padding: "10px",
-                  borderBottom: "1px solid #ccc",
+                  borderBottom: "2px solid red",
                   cursor: "pointer",
+                  textAlign:"center"
                 }}
               >
                 {item}
@@ -106,7 +108,7 @@ export default function NavBar() {
                   Marketplace
                 </Link>
               </div>
-              <div style={{ position: "relative", zIndex: 100, marginRight: "9%", fontSize: "20px" }} className="navbuttons">
+              <div style={{ position: "relative", zIndex: 100, marginRight: "6%", fontSize: "20px",margin:"5px" }} className="navbuttons">
                 <Dropdown
                   label="Calculators"
                   items={["EMI", "SIP", "Retirement plan", "Income tax", "LumpSum", "FD", "PPF"]}

@@ -53,6 +53,7 @@ const Company = () => {
   }, [routeSlug]);
  
   return (
+    
       <div style={{background:"linear-gradient(to right, #260000, #c31432)",height:"180vh",display:"flex",justifyContent:"center"}}> {
       data ?
         <Fade>
@@ -66,8 +67,9 @@ const Company = () => {
           </div>
           </Fade>
               :""
-      }
-    </div>
+    }
+      </div>
+     
   );
 };
 
