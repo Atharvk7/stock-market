@@ -4,6 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import React from "react"
+import WhyToInvest from './aboutus';
 export default function Footer() {
     return (
         <div style={{ height: "100vh", color: "black", width: "full", textAlign: "center" }}>
@@ -30,7 +31,7 @@ export default function Footer() {
                       <SwiperSlide  style={{backgroundColor:'white',height:"40vh",width:"24vw",borderRadius:"15px",textAlign:"center",padding:"1%"}}><h4>Sania </h4>This website is a good starting point for beginners who are new to stock market investing. The information is presented in a clear and concise manner, and the website offers a variety of educational resources. However, experienced investors may find the analysis to be too basic and lacking in sophistication.<br/><br/><h3>⭐⭐</h3></SwiperSlide>
                 </Swiper>
             </div><br/><br/><br/>
-            <div style={{ display: "flex", flexDirection: "row", width: "99vw", justifyContent: "space-around", height: "40vh",color:"white",backgroundColor:"Black" }}>
+            <div style={{ display: "flex", flexDirection: "row", width: "100vw", justifyContent: "space-around", height: "40vh",color:"white",backgroundColor:"Black" }}>
                 <div><img src={"https://res.cloudinary.com/djbjtsun9/image/upload/v1700691130/cc_iqsbj7.png"} alt="" style={{marginTop:"70px"}} /></div>
                 <div>
                     <br/>
@@ -48,9 +49,9 @@ export default function Footer() {
                     <br />
                     <br/>
                     <div>
-                        <span>✆ +919834765592</span><br/>
-                        <span mailto="parthkadavrox@gmail.com">✉ parthkadavrox@gmail.com</span><br/>
-                        <span>hello@gmail.com</span><br/>
+                        <span>✆ +917498789849</span><br/>
+                        <a href="mailto:yuvraajraaut@gmail.com" style={{color:"white"}}>✉ yuvraajraaut@gmail.com</a><br/>
+                       
                 </div>
                 
                 </div>

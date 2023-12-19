@@ -27,7 +27,7 @@ export default function CompanyTable() {
 
   const handleCompanyClick = (companyCode) => {
     // Update the URL with the company code
-    window.history.pushState({}, "", `https://example.com/companies/${companyCode}`);
+    window.location.href= (`https://example.com/companies/${companyCode}`);
   };
 
   return (
